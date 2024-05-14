@@ -23,11 +23,6 @@ type Director struct {
 	Lastname  string `json:"lastname"`
 }
 
-type MovieMaker struct {
-	FirstName string `json:"firstname"`
-	LastName  string
-}
-
 var movies []Movie
 
 func getMovies(w http.ResponseWriter, r *http.Request) {
